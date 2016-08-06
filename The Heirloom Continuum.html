@@ -1,0 +1,218 @@
+<tw-storydata name="The Heirloom Continuum" startnode="1" creator="Twine" creator-version="2.0.11" ifid="62F2C90B-2FDF-41CF-A289-F563CA4E2BA4" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url(https://fonts.googleapis.com/css?family=Wallpoet);
+
+body { 
+	background: #333333;
+	
+	
+}
+
+tw-passage {
+	color: #ffffff;
+	font-family: Wallpoet, serif;
+}
+
+tw-link, tw-link:visited {
+	color: #009933;	
+}
+
+a, a:visited {
+	color: #009933;	
+}
+
+tw-link:hover {
+	color: #33cc33;	
+}
+
+a:hover {
+	color: #33cc33;	
+}
+
+.image-window {
+	width: 200px;	
+	opacity: 0.3;
+	border-radius: 50%;
+}
+
+.image-window:hover {
+	opacity: 0.8;
+	transition: opacity .2s ease-out;
+  -moz-transition: opacity .2s ease-out;
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+}
+
+.window-1912 {
+ background-image:url("https://dl.dropbox.com/s/t04qw23yl7j478x/nla.obj-149653098-1.jpg");
+ background-size:cover;
+	
+}
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+</script><tw-passagedata pid="1" name="Welcome" tags="donotshowinventory donotshowtrove" position="256,0"># The Heirloom Dominion
+
+&lt;img src=&quot;https://dl.dropbox.com/s/gomqc8r2wx4tsjm/heirloom.jpg&quot; style=&quot;width:800px;&quot;&gt;
+
+[[ Begin-&gt;begin ]]
+
+[[ About this game ]]</tw-passagedata>
+<tw-passagedata pid="2" name="begin " tags="donotshowinventory" position="260,145">(set: $name to &quot;&quot;)
+(set: $names to (a: &quot;Bill&quot;, &quot;John&quot;, &quot;Mary&quot;, &quot;Jane&quot;, &quot;Phillip&quot;, &quot;Jaiden&quot;, &quot;Jamie&quot;, &quot;Jamia&quot;, &quot;Emily&quot;, &quot;Elizabeth&quot;, &quot;Ella&quot;, &quot;Ethan&quot;, &quot;Eddie&quot;, &quot;Lindsey&quot;, &quot;Sarah&quot;, &quot;Jack&quot;, &quot;Daniel&quot;, &quot;Alex&quot;, &quot;Fred&quot;, &quot;Thomas&quot;, &quot;Allie&quot;, &quot;Jemma&quot;, &quot;Mimi&quot;, &quot;Liza&quot;, &quot;Sophie&quot;, &quot;Jemima&quot;, &quot;Clare&quot;, &quot;Marie&quot;, &quot;Michael&quot;, &quot;Sean&quot;, &quot;Connal&quot;, &quot;Harry&quot;, &quot;Kyle&quot;, &quot;Jude&quot;, &quot;Astrid&quot;))
+(if: $name is &quot;&quot;)[(set: $name to ((random: 1, 35)) of $names)]
+
+Hello $name, welcome to the Heirloom Dominion.
+
+The Heirloom Dominion was proclaimed by the to be the human race’s greatest achievement, at least within the scope of recent memory. The space station boasts a colossal size of 8576 metres long and a weight of approximately 56000 tons. It sits on the outskirts of solar system, barely within our sun’s gravitational pull. It was built to be not only a research station but also as a military base and as a launch station. You are a young cadet on this space station, training to be part of the military forces that will one day go to conquer space beyond our solar system and the Heirloom Dominion. However maybe all at The Heirloom Dominion is not what it seems, there have always been conspiracies about top secret government experiments being performed on the space station, so what will happen when you get caught right in the middle of it?
+
+[[ Continue-&gt;awake ]]
+
+(set: $inv to (a:))</tw-passagedata>
+<tw-passagedata pid="3" name="trove" tags="" position="620,1035">### Connecting to data source...
+
+&lt;iframe src=&quot;http://trove.nla.gov.au&quot; style=&quot;width:800px; height:400px;&quot;&gt;
+
+
+(link-goto: &quot;Return&quot;, (history:)&#39;s last) </tw-passagedata>
+<tw-passagedata pid="4" name="awake " tags="" position="410,144">You jolt awake to the incessant beeping of the morning alarm fills the cabin. The other young cadets around you begin to stir in their bunks, beginning to change into their jumpsuits and collect their supplies to head to morning gathering. You stay in your bunk for longer than everyone else in the cabin as you are still incredibly drowsy, being put on a double shift the night before had taken it’s toll. It’s not until you realize that there are very few people left in the cabin do you leap out of your bunk, realizing you could be late. You hastily pull your jumpsuit on and hook your communicator onto your belt, almost running headlong into a wall as you stumble out of the cabin.
+
+(click: &quot;hook your communicator&quot;)[(set: $inv to $inv + (a: &quot;communicator&quot;))]
+
+[[ Continue-&gt;sprint ]]</tw-passagedata>
+<tw-passagedata pid="5" name="sprint " tags="" position="561,143">As you sprint down the hallways toward the main common room you glance down at the time on your communicator in horror, you’re already almost five minutes late for gathering. You just manage to avoid another crash into a wall as you round a corner and find yourself in the common room, staring at the sea of other cadets already seated in neat rows with their heads turned toward the instructors who were standing on a platform addressing the cadets as they read announcements and assigned duties for the day. You ducked your head and sit down in the back row, a other kids shooting you annoyed glances. You think that you might have just gotten away with it until you hear one of the instructors say your name in a formidable, booming voice.
+
+//“Cadet $name, as you were late for morning gathering for today you will be assigned to cleaning in the boiler room, as here at The Heirloom Dominion we expect better then such negligence.”//
+
+[[ Continue-&gt;grumbling ]]</tw-passagedata>
+<tw-passagedata pid="6" name="grumbling " tags="" position="711,146">You spend the morning grumbling to yourself alone in the boiler as you try and decipher how to use various complex looking tools that are used to maintain different pieces of equipment. “That piece is supposed to go there but it doesn’t fit and… ugh.” You mumble and groan, trying fit together two pipes that are meant to clean out the main power generator. You give up on trying to put those together and instead take to cleaning the dust off a clear cabinet that stores all the parts. You begin to dust it when something inside the cabinet catches your eye. It’s wedged awkwardly in between the other parts and unlike the things around it the object is a murky rusted colour rather than a bright metallic one. You stare at it for a few seconds before curiosity gets the better of you. You tentatively pry open the cabinet door and reach in, pulling out the object. The objects a square, about a centimetre thick. One side seems to be rusted metal while to other side seemed to be a screen. A few more seconds pass before the screen lights up and displays the words “Data Source” You glance around sheepishly before shoving the object into your equipment bag, as this was too intriguing to leave behind. You quickly go back to cleaning.
+
+[[ Continue-&gt;cleaning ]]
+
+(click: &quot;into your equipment bag&quot;)[(set: $inv to $inv + (a: &quot;data source&quot;))]</tw-passagedata>
+<tw-passagedata pid="7" name="cleaning " tags="" position="870,148">Out of the corner of your  eye you see movement. You turn your head in it’s direction, making sure it isn’t just a figment of your imagination and find yourself staring straight at a small arch of soft blue located a few meters away.
+
+&lt;img class=&quot;image-window&quot; src=&quot;https://dl.dropbox.com/s/8vruq6dq7noctes/nla.obj-142924203-1.jpg&quot;&gt;
+
+Inside it seemed to swirl around like it were some sort of whirlpool, what looked like a room full of old furniture sat in the very centre. At the edges the it was jagged, torn, as though something had been forced through it. Do [[you move towards it-&gt;through the portal]] or [[go on with your cleaning duties]]?</tw-passagedata>
+<tw-passagedata pid="8" name="go on with your cleaning duties" tags="donotshowinventory" position="870,298">You back away from it, not wanting to  get into trouble for tampering with whatever that was. You begin to dust the metal cabinet again when you hear yelling coming from outside the door, and then, a large crash as two men you recognise as Fletcher Masters and Ashley Vertue stand in the doorway, pure rage in their two sets of eyes. 
+
+“What are you doing in here?” Ashley shouted, startling you. 
+
+“C-cleaning duty, Mr. V-vertue.” You stutter, not making eye contact. 
+
+“Don’t lie to me!” 
+
+“I’m n-not…” You trail off, too scared to say anything against him. 
+
+“Get out of there, now!” Mr. Masters pipes up. 
+
+You walk through the door and get shoved by both the older men. Fletcher slams the door shut  while Ashley grabs your shoulder and pulls you to your left. 
+
+“Gaol time.” Ashley snarls, a large frown spread across his face. “I never did like you kid, but I didn’t think you’d be one to go to gaol. What the hell were you thinking?” 
+
+He proceeded to type in a twelve digit code on the shiny metal keypad, right above it, a sign reading PRISON.
+
+[[ Restart-&gt;begin ]] </tw-passagedata>
+<tw-passagedata pid="9" name="through the portal" tags="" position="1099,212">(set: $answers to (a:))
+
+You edge closer towards it, trying to get a closer look when your stomach starts to churn and everything starts to hurt. All you see is black as you flail your arms and legs, trying desperately to escape what ever’s currently trapping you. But, just as suddenly as it started, it stopped. 
+
+You find yourself sprawled across a hard surface and attempt to sit up but everything aches. You rest your hands on your chest and take a deep, shaky breath while taking in your surroundings. What you presume is a roof was made out of something you’ve never seen before, it looks rough and unpolished. The walls and floor are made from the same material. There’s a door sitting to your left, it’s made of another unfamiliar material and  another small, yet yellow, arch sits on the other side of the room, looking even more beaten up than the blue one. The room is large, maybe seven by ten meters and the roof’s quite low. A table is located next to the yellow arch, made of the same stuff as the door. You’ve been lying there for a few minutes when you finally muster up the strength to stand.
+
+(if: $inv contains &quot;data source&quot;)[
+Do you try and go [[back through the portal]] or try and [[find another way out-&gt;look for another exit]]?]
+(else:)[You try and go [[back through the portal]].]</tw-passagedata>
+<tw-passagedata pid="10" name="boudoir" tags="" position="1156,930">(set: $answers to (a:))
+
+&lt;img src=&quot;https://dl.dropbox.com/s/8vruq6dq7noctes/nla.obj-142924203-1.jpg&quot;&gt;
+
+You decide that your best shot at getting out of here is just to gather information. You find yourself in a room of a house from centuries ago, far from the 24th century space station you are accustomed to. You decide to consult your [[data source-&gt;trove]] for information, possibly on who lives in this house. You wonder whether the house might belong to [[Alfred Deakin-&gt;data fail]], [[Dame Nellie Melba]], [[John Monash-&gt;data fail]] or perhaps [[Jessie Street-&gt;data fail]].</tw-passagedata>
+<tw-passagedata pid="11" name="portal return" tags="" position="1300,350">(if: $answers&#39;s length &gt; 0)[Your data points includes: (print: $answers.join(&quot;, &quot;)).]
+(else:)[You have no data points.] 
+
+(if:  $answers&#39;s length is 3)[You approach the portal once more, hoping that this will be the last time you have to. You suddenly feel a familiar churning in your stomach and darkness engulfs you once more. Your limbs start to ache and you find yourself back in the boiler room, next to the cabinet. You stand up, your head spinning, and begin to walk towards the door. 
+
+“Cadet $name, you’re done for the day.” A tall figure stands in front of you. 
+
+“Thank you, Mrs. Yellick.” You almost crash into her as you make a beeline for your dorm.
+
+“How was your day?” Your friend Pauline asks you. 
+
+“Fine, I guess.” 
+
+The End
+
+[[ Restart-&gt;begin ]] 
+]
+
+(else:)[Insufficient data has been collected.]</tw-passagedata>
+<tw-passagedata pid="12" name="Dame Nellie Melba" tags="" position="1238,585">(set: $answers to $answers + (a: &quot;Nellie Melba&quot;))
+
+You input the data into your data source and reveive this massage: &quot;Dame Nella Melba has been saved as a data point.&quot; You have succsesfully recorded a peice of data on your current location.
+
+You can try to return [[through the portal-&gt;portal return]] or [[keep exploring-&gt;newspaper article]].</tw-passagedata>
+<tw-passagedata pid="13" name="newspaper article" tags="" position="1333,761">You find a fragment of a newspaper article, it seems recent. Perhaps you can use it to find the year. You check your [[data source-&gt;trove]]
+
+&lt;img style=&quot;width:800px;&quot; src=&quot;https://dl.dropbox.com/s/5nphbg1omf3wxdc/article.png&quot;&gt;
+
+After checking the [[data source-&gt;trove]] you are pretty sure the article is from the 1910s, but which year? Is it [[1910-&gt;data fail]], [[1911-&gt;data fail]], [[1912]], [[1913-&gt;data fail]], [[1914-&gt;data fail]], [[1915-&gt;data fail]], [[1916-&gt;data fail]], [[1917-&gt;data fail]], [[1918-&gt;data fail]], or [[1919-&gt;data fail]]?</tw-passagedata>
+<tw-passagedata pid="14" name="back through the portal" tags="" position="970,446">(if: $inv contains &quot;data source&quot;)[You’re completely bewildered so you immediately try to go back through where you came out, which you can only assume was a portal of some sort. You approach it again, but this time it doesn&#39;t suck you in like it did last time. You gingerly reach out and try to touch it’s swirling surface. Before you can however the portal zaps you with a small amount of electricity, enough to make to pull back in surprise. You stare at the portal as swirling white letters appeared on it’s surface, spelling out the words:
+
+“Insufficient data collected on current location. Consult data source.” 
+
+You stand there puzzled for a few moments, data about current location? You have no idea where you are. It takes a moment for you to realize what the data source is, you pull the strange rusted metal square out of your bag and switch it on, the grimy green lighting up again. This time it&#39;s displaying a screen of text, information. You put it back in your bag and decide your best option is to [[look for another exit]].]
+
+(else:)[You’re completely bewildered so you immediately try to go back through where you came out, which you can only assume was a portal of some sort. You approach it again, but this time it doesn&#39;t suck you in like it did last time. You gingerly reach out and try to touch it’s swirling surface. Before you can however the portal zaps you with a small amount of electricity, enough to make to pull back in surprise. You stare at the portal as swirling white letters appeared on it’s surface, spelling out the words:
+
+&quot;No data source detected, insufficiant data on current location. Window closing.&quot; 
+
+You watch in horror as the portal begins to shrink, eventually disappearing. You are now trapped in past, the portal has closed. Game Over. ]
+
+[[ Restart-&gt;begin ]] </tw-passagedata>
+<tw-passagedata pid="15" name="look for another exit" tags="" position="970,596">You decide to look around for another exit, there must be one nearby, right? You stand in the corner next to the door, surveying the room, nothing interesting pops up along the bumpy walls, no way to get out of this place. “Thank you, sir.” A voice. You freeze up immediately, not wanting to get found out. Do you [[stay in the room]] or [[look for another hiding place]]?</tw-passagedata>
+<tw-passagedata pid="16" name="stay in the room" tags="" position="970,746">You’re paralyzed, fear stricken and not able to move. You slowly slide down the wall into a crouch, the sharp material raking down your back uncomfortably, but not painfully. You rest you face on your knees, your breaths almost becoming silent. You flatten yourself against the wall as you hear a creaking and the door almost hits your nose.
+
+[[Continue-&gt;maid]]</tw-passagedata>
+<tw-passagedata pid="17" name="look for another hiding place" tags="" position="1120,714">You panic and bolt out of the room, heading for underneath the staircase. A tiny door. You sigh in relief and tug on the handle. It doesn’t open. Frantically, you look around for a key. The shiny, flat card that you’re used to isn’t anywhere to be seen, only a mangled and brassy piece of metal lies in front of you. You pick it up cautiously, not wanting to hurt yourself with the sharp, pointed edge and move it over a thing you know is a padlock, something your father had told you about. Nothing happened. No click, no ding, no movement from the door. You touch the padlock, turning it over in your hands, hoping to find some way to open it. On the bottom you find some sort of hole. You attempt to fit the metal piece in but it refuses. You groan in frustration and wait until a young woman goes into the room with the portal in it. You flatten against the wall the best you can and hold your breath.
+
+[[Continue-&gt;maid]]</tw-passagedata>
+<tw-passagedata pid="18" name="maid" tags="" position="721,875">From your hiding place you hear: 
+
+“Gregory! Come help me lift the table!”
+
+“Coming, Miss!”
+
+“I can’t believe I got to work here.”
+
+“I really don’t see how it’s exciting.”
+
+“It’s Coombe Cottage!”
+
+“And?..” By then the two people were out of earshot and somehow hadn’t noticed  you were there. Do you follow them [[up the stairs-&gt;boudoir]] or try to [[go back through the portal-&gt;back through the portal]]?</tw-passagedata>
+<tw-passagedata pid="19" name="data fail" tags="" position="1031,1080">You input the data and recieve this message: &quot;Data entry failed. Incorrect value.&quot;</tw-passagedata>
+<tw-passagedata pid="20" name="1912" tags="" position="1416,901">(set: $answers to $answers + (a: &quot;1912&quot;))
+
+1912 has been saved as a data point.
+
+You can try to return [[through the portal-&gt;portal return]] or [[keep exploring-&gt;fan]].</tw-passagedata>
+<tw-passagedata pid="21" name="silk" tags="" position="1585,1064">(set: $answers to $answers + (a: &quot;silk&quot;))
+
+Silk has been saved as a data point.
+
+You can try to return [[through the portal-&gt;portal return]] or keep exploring.</tw-passagedata>
+<tw-passagedata pid="22" name="fan" tags="" position="1579,894">You find a mysterious object. You decide to use your [[data source-&gt;trove]] to find out what it&#39;s made of.
+
+&lt;img style=&quot;width:800px;&quot; src=&quot;https://dl.dropbox.com/s/w3f150c66bylbig/nla.obj-137322617-1.jpg&quot;&gt;
+
+After using your [[data source-&gt;trove]], you think it might be made of [[paper-&gt;data fail]], or is it [[silk]]?</tw-passagedata>
+<tw-passagedata pid="23" name=" About this game " tags="" position="135,150">The Heirloom Dominion is a game created by the PhantasmX4 team at the UC Heritage Hack node of GovHack 2016.
+
+Our team:
+
+* Emily Bagnall
+* Lizzie Cond&amp;eacute;
+* Tim Sherratt
+* Isabel Tan
+
+The game was built using &lt;a href=&quot;https://twinery.org/&quot;&gt;Twine&lt;/a&gt; and draws on cultural heritage collections available through &lt;a href=&quot;http://www.trove.nla.gov.au&quot;&gt;Trove&lt;/a&gt;.</tw-passagedata>
+</tw-storydata>
